@@ -23,7 +23,7 @@ namespace AppTest
         public async void AddPersonTest()
         {
 
-            Assert.True(await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "karimi", Age = 30, Id = 1 }));
+            Assert.True(await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "saeedi", Age = 30, Id = 1 }));
 
 
         }
@@ -31,9 +31,9 @@ namespace AppTest
         public async void GetPersonTest()
         {
 
-            await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "karimi", Age = 30, Id = 4 });
-            await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "karimi", Age = 30, Id = 2 });
-            await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "karimi", Age = 30, Id = 3 });
+            await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "saeedi", Age = 30, Id = 4 });
+            await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "saeedi", Age = 30, Id = 2 });
+            await _personRepository.AddPerson(new Person() { FirstName = "ali", LastName = "saeedi", Age = 30, Id = 3 });
 
             var Persons = await _personRepository.GetPersons();
 

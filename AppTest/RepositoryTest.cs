@@ -21,7 +21,7 @@ namespace AppTest
         {
             RepositoryMock.Setup(p => p.GetPersons(default)).ReturnsAsync(new List<Person>()
             {
-                new Person(){FirstName="ali",LastName="karimi",Age=30,Id=1},
+                new Person(){FirstName="ali",LastName="saeedi",Age=30,Id=1},
                 new Person(){FirstName="mohammad",LastName="hasani",Age=30,Id=1},
             });
             var pesronrepo =await RepositoryMock.Object.GetPersons();
@@ -34,7 +34,7 @@ namespace AppTest
         {
             RepositoryMock.Setup(p => p.GetPersons(default)).ReturnsAsync(new List<Person>()
             {
-                new Person(){FirstName="ali",LastName="karimi",Age=30,Id=1},
+                new Person(){FirstName="ali",LastName="saeedi",Age=30,Id=1},
                 new Person(){FirstName="ali",LastName="hasani",Age=30,Id=1},
             });
             var pesronrepo = await RepositoryMock.Object.GetPersons();
@@ -47,7 +47,7 @@ namespace AppTest
         {
             RepositoryMock.Setup(p => p.GetPersons(default)).ReturnsAsync(new List<Person>()
             {
-                new Person(){FirstName="ali",LastName="karimi",Age=30,Id=1},
+                new Person(){FirstName="ali",LastName="saeedi",Age=30,Id=1},
                 new Person(){FirstName="ali",LastName="hasani",Age=30,Id=1},
             });
             var pesronrepo = await RepositoryMock.Object.GetPersons();
